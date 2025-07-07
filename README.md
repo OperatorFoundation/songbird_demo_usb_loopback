@@ -46,7 +46,7 @@ Songbird is a commercial audio demonstration device that showcases embedded audi
 
 The Songbird device integrates several components:
 
-- **Teensy 4.0 Microcontroller**: 600MHz ARM Cortex-M7 processor
+- **Teensy 4.1 Microcontroller**: 600MHz ARM Cortex-M7 processor
 - **Audio Shield**: SGTL5000 codec for high-quality audio processing
 - **128x32 OLED Display**: Real-time visual feedback with automatic rotation correction
 - **Two Color LEDs**: Blue and pink LEDs for level indication
@@ -77,7 +77,7 @@ The Songbird device integrates several components:
 ### Prerequisites
 
 - **Arduino IDE**: Version 1.8.15 or later
-- **Teensyduino**: Latest version for Teensy 4.0 support
+- **Teensyduino**: Latest version for Teensy 4.1 support
 - **Required Libraries**: See library installation section below
 
 ### Arduino IDE Setup
@@ -93,7 +93,7 @@ The Songbird device integrates several components:
 
 3. **Board Selection**:
    - Open Arduino IDE
-   - Go to Tools → Board → Teensyduino → "Teensy 4.0"
+   - Go to Tools → Board → Teensyduino → "Teensy 4.1"
    - Set USB Type to "Audio"
    - Set CPU Speed to "600 MHz"
 
@@ -264,7 +264,7 @@ The 128x32 OLED display shows:
 
 ### Hardware Specifications
 
-#### Teensy 4.0
+#### Teensy 4.1
 - **Processor**: 600MHz ARM Cortex-M7
 - **RAM**: 1MB
 - **Flash**: 2MB
@@ -286,7 +286,7 @@ The 128x32 OLED display shows:
 ### System Architecture
 
 ```
-USB Audio ─→ Teensy 4.0 ─→ Audio Shield ─→ Physical Output
+USB Audio ─→ Teensy 4.1 ─→ Audio Shield ─→ Physical Output
     ↓            ↓              ↓
     └─→ Level Detection ─→ Display/LEDs
 ```
@@ -396,7 +396,7 @@ USB Audio ─→ Teensy 4.0 ─→ Audio Shield ─→ Physical Output
 
 #### System Won't Start
 - **Check**: Power via USB
-- **Verify**: Teensy 4.0 functionality
+- **Verify**: Teensy 4.1 functionality
 - **Test**: Basic Arduino sketch
 - **Check**: Bootloader integrity
 
